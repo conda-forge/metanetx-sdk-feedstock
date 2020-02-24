@@ -1,20 +1,20 @@
 {% set name = "metanetx-sdk" %}
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: bab0d7470b42ed49b8541ebf021359c5511169ca43b01f1f4dc9b5849b73ba64
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 33873da6d140c0555c20683c4b330d293f0d39e47a8aae038d47d62109ae68d4
 
 build:
   noarch: python
   entry_points:
-    - "mnx-sdk = metanetx_sdk.cli.cli:cli"
+    - mnx-sdk = metanetx_sdk.cli.cli:cli
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv --no-deps --ignore-installed"
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --ignore-installed
 
 requirements:
   host:
@@ -45,7 +45,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: "Parse and prepare information from [MetaNetX](https://metanetx.org)."
+  summary: Parse and prepare information from [MetaNetX](https://metanetx.org).
   description: |
     The main purpose of metanetx-sdk is to download and parse the data tables
     provided by the [MetaNetX FTP
