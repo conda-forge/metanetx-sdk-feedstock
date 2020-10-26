@@ -14,7 +14,7 @@ build:
   entry_points:
     - mnx-sdk = metanetx_sdk.cli.cli:cli
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv --no-deps --ignore-installed
+  script: {{ PYTHON }} -m pip install versioneer-518; {{ PYTHON }} -m pip install . -vv --no-deps
 
 requirements:
   host:
