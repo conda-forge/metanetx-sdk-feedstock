@@ -5,9 +5,13 @@ Home: https://pypi.org/project/metanetx-sdk/
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/metanetx-sdk-feedstock/blob/master/LICENSE.txt)
 
 Summary: Parse and prepare information from [MetaNetX](https://metanetx.org).
+
+Development: https://github.com/Midnighter/metanetx-sdk
+
+Documentation: https://metanetx-sdk.readthedocs.io/
 
 The main purpose of metanetx-sdk is to download and parse the data tables
 provided by the [MetaNetX FTP
